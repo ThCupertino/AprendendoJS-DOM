@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./escalacao-de-times.js"></script>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <title>Escalação de Times</title>
+</head>
+<body>
+  <header class="cabecalho">
+    <h1>Escalando o Time</h1>
+  </header>
+
+  <main class="card">
+    <div class="escalando_jogador">
+      <h1>Escalando um novo jogador</h1>
+        <div class="entrada">
+          <label for="playerName">Nome do Jogador: </label>
+          <input id="playerName" type="text" placeholder="Nome">
+        </div>
+        <div class="entrada">
+          <label for="playerPosition">Posição do jogador: </label>
+          <input id="playerPosition" type="text" placeholder="Posição">
+        </div>
+        <div class="entrada">
+          <label for="playerNumber">Número da camisa do jogador: </label>
+          <input id="playerNumber" type="number" placeholder="Número">
+        </div>
+        <button class="botao" onclick="addPlayer()">ESCALAR</button>
+    </div>
+
+    <div class="removendo_jogador">
+      <h2>Remover jogador</h2>
+      <label for="numberToRemove">Número: </label>
+      <input id="numberToRemove" type="text" placeholder="Número">
+      <button class="botao" onclick="removePlayer()">REMOVER</button>
+    </div>
+
+    <section id="team">
+      <h2>Time: </h2>
+    </section>
+
+  </main>
+
+</body>
+</html>
